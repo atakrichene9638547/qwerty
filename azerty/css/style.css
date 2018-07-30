@@ -1,0 +1,15 @@
+#par{border: 1px solid black ;
+margin: 20px;
+}
+.boutonnet{display: inline;
+	width: 10%
+    border: 1px solid black;
+	font-size: 30px;}
+.boutonnet:hover {
+    background-color: crimson;
+    color: white;
+
+}
+.form-control{
+	width: 100%;
+}
