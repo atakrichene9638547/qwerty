@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+
+  <body>
+    
+    <div class="row" id="box">
+     <button class="boutonnet" onclick="lol()" id="bold">BOLD</button>
+     <button class="boutonnet" onclick="bott()" id="it">ITALIC</button>
+     <button class="boutonnet" onclick="under()" id="und">UNDERLINED</button>
+   
+     <select class="boutonnet" onclick="font()" id="font">
+  <option value="Bookman Old Style" >Bookman</option>
+  <option value="Arial">arial</option>
+  <option value="Garamond">Garamond</option>
+  <option value="Wingdings">Wingdings</option>
+</select>
+     <select class="boutonnet" onchange="Size()" id="ssize">
+  <option value="8px">8</option>
+  <option value="12px">12</option>
+  <option value="16px">16</option>
+  <option value="20px">20</option>
+  <option value="24px">24</option>
+  <option value="28px">28</option>
+  <option value="32px">32</option>
+  <option value="40px">40</option>
+  <option value="64px">64</option>
+  
+</select>
+
+ 
+
+     </div>
+
+     <br><br><br><br><br><br>
+     <div id="para">
+     <p id="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</body>
+<script src="js/main.js"></script>
+</html>
