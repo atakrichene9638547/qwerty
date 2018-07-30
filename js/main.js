@@ -1,43 +1,17 @@
-function lol()
-{
-	var par=document.getElementById('para');
-	if(par.style.fontWeight=='bold')
-	{
-		par.style.fontWeight='normal';
-	}
-	  else{
-	  	par.style.fontWeight='bold';
-	  }
-}
-function under()
-{
-	var par=document.getElementById("para");
-	if(par.style.textDecoration=='underline')
-	{
-		par.style.textDecoration='normal';
-	}
-	  else{
-	  	par.style.textDecoration='underline';
-	  }
-}
-function bott()
-{
-	var par=document.getElementById("para");
-	if(par.style.fontStyle=='italic')
-	{
-		par.style.fontStyle='normal';
-	}
-	  else{
-	  	par.style.fontStyle='italic';
-	  }
-}
-function font(){
-	document.getElementById("para").style.fontFamily=document.getElementById("font").value;
+$('#bold').click(function(){
+      $('#para').toggleClass('bold');
+})
+$('#it').click(function(){
+      $('#para').toggleClass('italic');
+})
 
+$('#und').click(function(){
+      $('#para').toggleClass('underlined');
+})
+$('#font').change(function(){
+      $('#para').css('font-family',$('#font').val())
+})
 
-}
-function Size(){
-	document.getElementById("para").style.fontSize=document.getElementById("ssize").value;
-
-
-}
+$('#size').change(function(){
+      $('#para').css('font-size' ,$('#size').val())
+})
