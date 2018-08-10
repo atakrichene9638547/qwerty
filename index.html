@@ -1,65 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+<title></title>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
-
-
-  <body id="body">
-    <div class="container">
+<body background="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=12c1153165f386e2c49bb8579bc52a50&auto=format&fit=crop&w=1500&q=80">
+<div class="container">
   <div class="page-header">
-    <h1>ADA Students feedback</h1> 
+    <h1>Préinscription:</h1> 
 </div></div>
- <div class="row" id="azerty">
-    <div class="col-sm-4" style="background-color:lavender;">
-      <img src="https://techcrunch.com/wp-content/uploads/2015/04/uncle-sam-we-want-you1-kopie_1.png?w=730&crop=1" id="image"><br><br><br>
-<p><b>To give us feedback, because this course is made for you!<br><br> Because it's all about you!</b></p><br>
-<p>Fill this form if you:</p><br>
-<p>- Find an error in the content or in the quizzes</p><br>
-<p>- Have a feedback about instructors or the experience</p><br>
-<p>- Have a suggestion on how to make the course better</p>
-
-    </div>
+<div class="row" id="azerty">
+ 
     <div class="col-sm-8" id="  " style="background-color:lavenderblush;"><div class="container" id="formulaire">
-  <h2>Email Us</h2>
-  <form action="/action_page.php">
+  
+ <div class="alert" id="alert">Your message has been sent</div>
+  <form  id="contactForm" method="POST" action="https://formspree.io/ata.krichene@gmail.com">
      <div class="form-group">
-      <label  for="name">Name:</label>
-     <p><input type="text" class="form-control" id="hh" placeholder="Enter name" name="name"></p>
-    </div>
-     <div class="form-group">
-      <label for="track">Track:</label>
-     <form action="/action_page.php">
-  <select name="track">
-    <option value="AI">AI</option>
-    <option value="Game">Game</option>
-    <option value="Web">Web</option>
-    </select></form>
-  </select>
+      <label  for="Prénom">Prénom:</label>
+     <p><input type="text" class="form-control" id="Prénom" placeholder="" name="name"></p>
     </div>
     <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="jj" placeholder="Enter email" name="email" required="on">
+      <label for="Nom">Nom:</label>
+      <input type="text" class="form-control" id="Nom" placeholder="" name="email" required="on">
+    </div>
+
+    <div class="form-group">
+      <label for="company">Prénom du tuteur:</label>
+      <input type="text" class="form-control" id="tut" placeholder="" name="tut" required>
     </div>
     <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pp" placeholder="Enter password" name="pwd" required>
+      <label for="date">date de naissance:</label>
+      <input type="date" class="form-control" id="date" placeholder=" name="date" required="on">
     </div>
     <div class="form-group">
-      <label for="msg">Message:</label>
-      <textarea name="message" rows="10" cols="30">
-     </textarea>
+      <label for="company">e-mail:</label>
+      <input type="mail" class="form-control" id="mail" placeholder="" name="mail" required>
     </div>
-   
-    <input type="submit"  value="submit">
+    <div class="form-group">
+      <label for="company">telephone:</label>
+      <input type="tel" class="form-control" id="tel" placeholder="" name="mail" required>
+    </div>
+    
+
+
+
+     <fieldset>
+    <legend class="legend">Discipline :</legend>
+    <div>
+      <input type="radio" id="Choice1"
+       name="musique" value="musique">
+      <label for="Choice1">Musique</label>
+       <input type="radio" id="Choice2"
+       name="danseclassique" value="danse classique">
+      <label for="Choice2">Danse moderne</label>
+      <input type="radio" id="Choice3"
+       name="dansemoderne" value="danse classique">
+      <label for="Choice3">Danse moderne</label>
+      
+      <input type="radio" id="Choice4"
+       name="theatre" value="theatre">
+      <label for="Choice4">Théâtre</label>
+      <br>
+      <input type="radio" id="Choice5"
+       name="Peinture" value="Peinture">
+      <label for="Choice5">Peinture</label>
+      <input type="radio" id="Choice6"
+       name="audiovisuel" value="audiovisuel">
+      <label for="Choice6">Audiovisuel</label>
+      <input type="radio" id="Choice7"
+       name="photographie" value="photographie">
+      <label for="Choice7">Photographie</label>
+      <input type="radio" id="Choice8"
+       name="gymnastique" value="gymnastique rythmique">
+      <label for="Choice8">Gymnastique rythmique</label>
+
+      
+    
+  </fieldset>
+<br>
+
+
+         <fieldset>
+    <legend class="legend">Instrument:</legend>
+    <div>
+      <input type="radio" id="Choice21"
+       name="Guitare" value="Guitare">
+      <label for="Choice21">Guitare</label>
+       <input type="radio" id="Choice22"
+       name="batterie" value="batterie">
+      <label for="Choice22">batterie</label>
+      <input type="radio" id="Choice23"
+       name="violon" value="violon">
+      <label for="Choice23">Violon</label>
+      
+      <input type="radio" id="Choice24"
+       name="Piano" value="Piano">
+      <label for="Choice24">Piano</label>
+      <br>
+      <input type="radio" id="Choice25"
+       name="alto" value="alto">
+      <label for="Choice25">alto</label>
+      <input type="radio" id="Choice26"
+       name="Ôud" value="Ôud">
+      <label for="Choice26">Ôud</label>
+      <input type="radio" id="Choice27"
+       name="violoncelle" value="violoncelle">
+      <label for="Choice27">violoncelle</label>
+      <input type="radio" id="Choice28"
+       name="Chant" value="Chant">
+      <label for="Choice28">Chant</label>
+
+      
+    
+  </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+ 	<button type="submit" value="send">submit</button>
   </form>
 </div></div>
-</div>
+</div>    
 
-    
-</body>
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
+</body>
 </html>
